@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+/* Update your layout for responsiveness */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.project-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 /* Default Styles for Larger Screens */
 body {
     font-family: Arial, sans-serif;
