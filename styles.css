@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+/* Default Styles for Larger Screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile-Friendly */
+@media screen and (max-width: 768px) {
+    header .navbar h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .project-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablet-Specific Styles */
+@media screen and (max-width: 1024px) {
+    .project-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
