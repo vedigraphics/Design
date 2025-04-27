@@ -11,6 +11,30 @@ body {
     padding: 0;
 }
 
+/* Add to your styles.css */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add hover effects to project cards */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
 /* Mobile-Friendly */
 @media screen and (max-width: 768px) {
     header .navbar h1 {
